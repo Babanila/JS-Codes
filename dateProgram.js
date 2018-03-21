@@ -1,4 +1,5 @@
 // Code to generates date of next 7 days
+
 (function(){
 
 function offerExpires(today){
@@ -64,6 +65,6 @@ if (num === isNaN || num === ' '){
 var elMsg = document.getElementById('sign');
 	elMsg.innerHTML = msg;
 	
-	
+
 	
 	
