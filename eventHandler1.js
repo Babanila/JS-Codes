@@ -1,3 +1,4 @@
+
 /*
 // Using HTML Event Handler
 function checkUsername(){
@@ -28,7 +29,7 @@ var elUsername = document.getElementById("username");
 	elUsername.onblur = checkUsername;
 */
 
-	
+
 // Using Event Listener
 function checkUsername(){
 		var elFeedbackMsg = document.getElementById("feedback");
@@ -42,3 +43,6 @@ function checkUsername(){
 
 var elUsername = document.getElementById("username");
 	elUsername.addEventListener("blur", checkUsername, false);
+
+// Using Event Listener end of code
+
