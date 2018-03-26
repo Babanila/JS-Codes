@@ -25,7 +25,7 @@ var $item8 = $('li[id=two]').addClass('cool');
 var $item9 = $('li[id!=three]').addClass('complete');
 
 var $item10 = $('li[id=four]').hide().delay(400).fadeOut(1500);
-*/
+
 
 $(function(){
     $('li:contains(fresh)').text('almond');
@@ -61,4 +61,26 @@ $(function(){
 		$(this).children('span').remove();
 		}) ;
 } ) ;
+
+*/
+
+$(function(){
+var $newItemForm = $('#newItemForm') ;
+var $textInput = $('input:text') ;
+	$newItemButton.show();
+	$newItemForm.hide();
+		$('#showForm').on('click', function(){
+				$newItemButton.hide();
+				$newItemForm.show();
+		});
+
+			$newItemForm.on('submit', function(e){
+    			e.preventDefault();
+    			var newText = $('input:text').val();
+    			$('li:last').after('<li>' + newText + '</li>') ;
+    			$newItemForm.hide();
+				$newItemButton.show();
+				$textInput.val(' ');
+				}) ;
+});
 // You can run them one by one to get how each works
